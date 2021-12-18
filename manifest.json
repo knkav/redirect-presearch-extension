@@ -1,0 +1,20 @@
+{
+  "name": "Kolompilo Redirect",
+  "description": "Kostaras made the best tool to redirect presearch",
+  "manifest_version": 2,
+  "version": "2.0",
+  "icons": {
+    "16": "kolompilo16.png",
+    "48": "kolompilo48.png",
+    "128": "kolompilo128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [ "https://engine.presearch.org/search?q=*" ],
+      "run_at": "document_start",
+      "js": [ "script.js" ],
+      "css": []
+    }
+  ]
+}
